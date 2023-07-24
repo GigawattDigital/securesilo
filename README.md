@@ -40,9 +40,9 @@ using the administrator's private key or a backup private key.
 
 #### What if I lose my private key?
 
-If you lose your private key and do not have backup private keys, your data will be lost forever.
-Due to the nature of end-to-end encryption, there is no way to recover your data without the one of
-the private keys that were used to encrypt it.
+_If you lose your private key and do not have backup private keys, your data will be lost forever!
+Due to the nature of public key encryption, there is no way to recover your data without the one of
+the private keys that were used to encrypt it._
 
 Each user that you create on your server instance is assigned a unique device-based passkey that is
 used to encrypt their data in transit.  User passkeys are generated on the user's device and are
