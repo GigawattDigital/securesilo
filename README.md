@@ -102,6 +102,22 @@ The LLaMa language model can be licensed for commercial use from Meta, at no cos
 fewer than 700 million active users per month_.  For research use, there is no limit on the number of
 users.
 
+## Can I train it with my own data?
+
+securesilo is designed to use pre-trained language models, See PLUGINS (and RELATED PROJECTS) below for
+links to the software, tools and and hardware needed to train your own language models.
+
+## Plugins
+
+securesilo supports plugins that can be used to extend its functionality.  Plugins can be used to
+add new language models, user interfaces, structured document types and data formats, storage
+methods locations, encryption methods, and visualization tools that we could never dream up on
+our own.
+
+You can create your own plugins, use plugins contributed by the community or purchase proprietary
+plugins from third parties.  You can also sell your own plugins to other securesilo users on the
+soon-to-be-released securesiloo plugin marketplace.
+
 ## How do I get started?
 
 There are two ways to get a securesilo server instance up and running:
@@ -304,10 +320,32 @@ attack is limited to that person (such as staff at your hosting provider, at you
 Cloudflare, or any of the untrusted networks in-between) being able to see _that communication is occuring_
 between your web server and the reverse proxy.  The content of that communication will still be encrypted.
 
-```bash
-
-```bash
-
 See the [securesilo deployment guide](https://securesilo.ai/docs/deployment) for more advanced deployment
 configuration options.
+
+## Related Projects
+
+- AI-based search and retieval of your corpus of PDF documents
+  https://github.com/chroma-core/gpt4-pdf-chatbot-langchain-chroma
+
+- Langchain
+  https://github.com/langchain-ai/langchain
+
+- Chroma
+  https://github.com/chroma-core/chroma_datasets
+
+- Llama Index
+  https://github.com/jerryjliu/llama_index
+
+- ChatGPT Retrieval Plugin
+  https://github.com/chroma-core/chatgpt-retrieval-plugin
+
+- Falcon MPT 
+  https://www.mosaicml.com/blog/mpt-30b
+
+- Vicuna
+  https://github.com/eddieali/Vicuna-AI-LLM
+
+- Stable Diffusion Image models
+  https://github.com/Stability-AI/stablediffusion
 
