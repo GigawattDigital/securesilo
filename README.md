@@ -44,12 +44,12 @@ _If you lose your private key and do not have backup private keys, your data wil
 Due to the nature of public key encryption, there is no way to recover your data without the one of
 the private keys that were used to encrypt it._
 
-**Therefore, if your data has significan financial value or business operational risk, it is
+**Therefore, if your data has significant financial value or business operational risk, it is
 strongly recommended that you create at least three backup private keys and store them in
 different secure offsite locations (such as a on a thumb drive in a safety deposit box at a bank)
 and/or with trusted third parties such as your attorney, accountant, audit firm, professional key
-escrow service, security firm or other trusted individuals.  Private keys can also be printed out
-on paper or stored securely on a hardware security device such as a Yubikey or Trezor.**
+escrow service, professional security firm or other trusted individuals.  Private keys can also be
+printed out on paper or stored securely on a hardware security device such as a Yubikey or Trezor.**
 
 Each user that you create on your server instance is assigned a unique device-based passkey that is
 used to encrypt their data in transit.  User passkeys are generated on the user's device and are
@@ -61,7 +61,7 @@ authentication to further secure their account.
 ## Is it as good as OpenAI?
 
 securesilo uses only LLM's (large anguage models) that have been released as open source software,
-or with a license that allows for commercial use, that can be run ebntirely on your own hardware or
+or with a license that allows for commercial use, that can be run entirely on your own hardware or
 a cloud server that you completely control, without having to rely on any third party service which
 could use your data for their own purposes.
 
@@ -69,10 +69,10 @@ Currently securesilo supports:
 
 **Meta's llama-2 engine**
 
-llama-2 is a powerful engine that can be used to generate a wide variety of content.  Earlyy reports
-suggest that, whie it is not quite as powerful as OpenAI's GPT-4, it already outperforms GPT-3.5,
-Bing and Bard engines on most tasks.  Notably, llama-2 does not (yet!) generate computer language code
-or images, but it generates text responses to natural language queries very well.
+llama-2 is a powerful engine that can be used to generate a wide variety of content.  While it is not
+quite as powerful as OpenAI's GPT-4, it already outperforms GPT-3.5, Bing and Bard engines on most
+tasks.  Notably, llama-2 does not (yet!) generate computer language code or images, but it generates
+text responses to natural language queries very well.
 
 Additional language models are the roadmap such as
 
