@@ -221,7 +221,7 @@ git clone git@github.com:GigawattDigital/securesilo.git
 
 ## Configure your Meta commercial license
 
-Copy the `env.example` file in the project root directory to `.env` and edit the values to provide 
+Copy the `env.example` file in the project root directory to `.env` and edit the values to provide
 your Meta llama-2 license information.
 
 (please use your own values for the licence keys, not the invalid sample values shown below)
@@ -326,27 +326,33 @@ configuration options.
 
 ## Related Projects
 
-- AI-based search and retieval of your corpus of PDF documents
-  https://github.com/chroma-core/gpt4-pdf-chatbot-langchain-chroma
-
-- Langchain
+- Langchain - Chaining multiple LLMs to one another
   https://github.com/langchain-ai/langchain
 
-- Chroma
-  https://github.com/chroma-core/chroma_datasets
+- Chroma - emebed a corpus of PDF documents for search and retieval
+  https://github.com/chroma-core/gpt4-pdf-chatbot-langchain-chroma
 
-- Llama Index
+- Llama Index - Connect LLMs to external data sources
   https://github.com/jerryjliu/llama_index
 
 - ChatGPT Retrieval Plugin
   https://github.com/chroma-core/chatgpt-retrieval-plugin
 
-- Falcon MPT 
+- Copilot for lawyers
+  https://www.harvey.ai/
+
+- GPT4All - federated inference using consumer grade CPUs
+  https://github.com/nomic-ai/gpt4all
+
+- Falcon MPT - Powerful Open-Source Language Model
   https://www.mosaicml.com/blog/mpt-30b
 
-- Vicuna
+- Vicuna - Open Source Chat Bot tuned for conversation
   https://github.com/eddieali/Vicuna-AI-LLM
 
 - Stable Diffusion Image models
   https://github.com/Stability-AI/stablediffusion
+
+- Awesome Transformaers - A curated list of awesome transformers and pre-trained models
+  https://github.com/huggingface/transformers/blob/main/awesome-transformers.md
 
