@@ -34,9 +34,13 @@ as you like to ensure that you can always recover your data.  Any backup private
 at any time.
 
 You control who can access all chat logs and ai-generated content stored on the server, and you can
-revoke access at any time.  Since all data is encrypted both in transit and at rest, even if your
-server is compromised, all stored data remains encrypted and can only be recovered by use of the
-administrator's private key or a backup private key.
+revoke user access at any time.  Since all data is encrypted both in transit and at rest, even if
+your server is compromised, all stored data remains encrypted and can only be recovered only by
+using the administrator's private key or a backup private key.
+
+If you lose your private key and do not have backup private keys, your data will be lost forever.
+Due to the nature of end-to-end encryption, there is no way to recover your data without the one of
+the private keys that were used to encrypt it.
 
 Each user that you create on your server instance is assigned a unique device-based passkey that is
 used to encrypt their data in transit.  User passkeys are generated on the user's device and are
