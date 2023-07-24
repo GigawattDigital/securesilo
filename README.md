@@ -89,8 +89,8 @@ And we hope to add support for _non-text_ LLMs soon such as
 securesilo is 100% free, open source software.  It is licensed under the MIT license, so you can
 use it for any purpose you like.
 
-The LLama 2 language model can be licensed for commercial use from Meta as long as you agree to their
-License Argeement https://ai.meta.com/resources/models-and-libraries/llama-downloads/ and
+The Llama 2 language model can be licensed for commercial use from Meta as long as you agree to their
+License Argeement https://ai.meta.com/resources/models-and-libraries/Llama-downloads/ and
 Acceptable Use Policy https://ai.meta.com/llama/use-policy/
 
 ## Can I use it for commercial purposes?
