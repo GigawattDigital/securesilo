@@ -95,12 +95,13 @@ Acceptable Use Policy https://ai.meta.com/llama/use-policy/
 
 ## Can I use it for commercial purposes?
 
-securesilo can be used for any purpose you like, including commercial use.  Distribution of the
+Anyone can use securesilo for any purpose they like, including commercial use.  Distribution of the
 securesilo software is subject to the open source terms of the MIT license.
 
-The LLaMa language model can be licensed for commercial use from Meta, at no cost _as long as you have
-fewer than 700 million active users per month_.  For research use, there is no limit on the number of
-users.
+The Llama 2 language model can be licensed for commercial use from Meta, at no cost _as long as you have
+fewer than 700 million active users per month_ 😮 and do not use it to train other LLM's.
+
+For research use, there is no limit on the number of users.
 
 ## Can I train it with my own data?
 
