@@ -70,8 +70,8 @@ Currently securesilo supports:
 **Meta's llama-2 engine**
 
 llama-2 is a powerful engine that can be used to generate a wide variety of content.  While it is not
-quite as powerful as OpenAI's GPT-4, it already outperforms GPT-3.5, Bing and Bard engines on most
-tasks.  Notably, llama-2 does not (yet!) generate computer language code or images, but it generates
+quite as powerful as OpenAI's GPT-4, it already outperforms the GPT-3.5, Bing and Bard engines on most
+tasks.  Notably, llama-2 does not (yet!) generate images or computer language code, but it generates
 text responses to natural language queries very well.
 
 Additional language models are the roadmap such as
