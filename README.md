@@ -6,10 +6,10 @@ Private AI Server
 securesilo is a private AI server that you can run on your own hardware or in the cloud.
 
 Organizations that want to use AI to generate content, but are concerned about the privacy and security
-of their data, can use securesilo to create a private AI server that is comlletely under their control.
+of their data, can use securesilo to create a private AI server that is completely under their control.
 
 Using 100% open source software, securesilo provides a secure, end-to-end encrypted service that your
-users can access via a web-based bot, a command line client, mobile device, or via the securesilo API
+users can access via a web-based bot, a command line client, mobile app, or via the securesilo API
 without having to worry about any of your prompt data or ai-generated content being shared with any
 third party.
 
@@ -17,18 +17,21 @@ third party.
 
 securesilo uses end-to-end encryption to ensure that your data is secure at all times. All promt data
 is encrypted on the client device before it is sent to the server, all responses are encrypted on the
-server before being set back to the user's device, and all data stored on the server is encrypted at
+server before being sent back to the user's device, and all data stored on the server is encrypted at
 rest.
 
 When you create a securesilo server instance, you generate a public/private key pair that is used to
-encrypt your data at rest.  The private key is never stored on the server, so only you can access
-your data.
+encrypt your data for storage on the file system or in the database.  The private key is never stored
+on the server, so only you can access your data.  The silo can write this encrypted data but cannot
+decrypt it once it is written.  Users' private keys can decrypt their own data on their devices, and
+the administrator's private key can decrypt all data on the server but, again, the decryption happens
+on the administrator's client device, not on the server.
 
 You can also create backup private keys that can be used to recover your data in the event that you
-lose access to your primary private key. Backup private are unique keys that can be stored in secure
-offsite locations or with trusted third parties.  You can create as many backup private keys as you
-like to ensure that you can always recover your data.  Any backup private key can be revoked at any
-time.
+lose access to your primary private key. Backup private keys are unique keys that can be stored in
+secure offsite locations or with trusted third parties.  You can create as many backup private keys
+as you like to ensure that you can always recover your data.  Any backup private key can be revoked
+at any time.
 
 You control who can access all chat logs and ai-generated content stored on the server, and you can
 revoke access at any time.  Since all data is encrypted both in transit and at rest, even if your
