@@ -44,7 +44,8 @@ _If you lose your private key and do not have backup private keys, your data wil
 Due to the nature of public key encryption, there is no way to recover your data without the one of
 the private keys that were used to encrypt it._
 
-**It is strongly recommended that you create at least three backup private keys and store them in
+**Therefore, if your data has significan financial value or business operational risk, it is
+strongly recommended that you create at least three backup private keys and store them in
 different secure offsite locations (such as a on a thumb drive in a safety deposit box at a bank)
 and/or with trusted third parties such as your attorney, accountant, audit firm, professional key
 escrow service, security firm or other trusted individuals.  Private keys can also be printed out
