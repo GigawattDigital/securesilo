@@ -1,4 +1,5 @@
 # securesilo
+
 Private AI Server
 
 ## What is securesilo?
@@ -10,8 +11,8 @@ of their data, can use securesilo to create a private AI server that is complete
 
 Using 100% open source software, securesilo provides a secure, end-to-end encrypted service that your
 users can access via a web-based bot, a command line client, mobile app, or via the securesilo API
-without having to worry about any of your prompt data or ai-generated content being shared with any
-third party.
+_**without having to worry about any of your prompt data or ai-generated content being shared with any
+third party**_.
 
 ## How secure is securesilo?
 
@@ -38,7 +39,7 @@ revoke user access at any time.  Since all data is encrypted both in transit and
 your server is compromised, all stored data remains encrypted and can only be recovered only by
 using the administrator's private key or a backup private key.
 
-#### What if I lose my private key?
+## What if I lose my private key?
 
 _If you lose your private key and do not have backup private keys, your data will be lost forever!
 Due to the nature of public key encryption, there is no way to recover your data without the one of
@@ -67,7 +68,7 @@ could use your data for their own purposes.
 
 Currently securesilo supports:
 
-**Meta's llama-2 engine**
+### Meta's llama-2 engine
 
 llama-2 is a powerful engine that can be used to generate a wide variety of content.  While it is not
 quite as powerful as OpenAI's GPT-4, it already outperforms the GPT-3.5, Bing and Bard engines on most
@@ -77,9 +78,9 @@ documents such as technical reports, articles, scientific research, contracts an
 
 Additional language models are the roadmap such as
 
-- other Open LLMs https://github.com/eugeneyan/open-llms
+- other Open LLMs <https://github.com/eugeneyan/open-llms>
 
-And we hope to add support for _non-text_ LLMs soon such as
+And we plan to add support for _non-text_ LLMs soon such as
 
 - text-to-image models such as DALL-E, CLIP, VQGAN, and others
 - code generation models such as Codex and Copilot
@@ -90,8 +91,8 @@ securesilo is 100% free, open source software.  It is licensed under the MIT lic
 use it for any purpose you like.
 
 The Llama 2 language model can be licensed for commercial use from Meta as long as you agree to their
-License Argeement https://ai.meta.com/resources/models-and-libraries/Llama-downloads/ and
-Acceptable Use Policy https://ai.meta.com/llama/use-policy/
+License Argeement <https://ai.meta.com/resources/models-and-libraries/Llama-downloads/> and
+Acceptable Use Policy <https://ai.meta.com/llama/use-policy/>
 
 ## Can I use it for commercial purposes?
 
@@ -221,7 +222,7 @@ git clone git@github.com:GigawattDigital/securesilo.git
 
 ## Configure your Meta commercial license
 
-Copy the `env.example` file in the project root directory to `.env` and edit the values to provide
+Copy the `env.example` file in the project root directory to ``.env`` and edit the values to provide
 your Meta llama-2 license information.
 
 (please use your own values for the licence keys, not the invalid sample values shown below)
@@ -248,7 +249,7 @@ docker-compose up
 ## Login to you personal AI server
 
 Open a browser and navigate to [http://localhost:6006/](http://localhost:6006/) (or whatever
-host/port you configured in your .env file)
+host/port you configured in your ``.env`` file)
 
 Create your admin account and setup its userid and password.
 
@@ -291,7 +292,7 @@ securesilo server instance.
 Since securesilo is designed to use end-to-end encryption, deploying to a publicly accessible server is
 nearly identical to setting up development instance.
 
-The only differencees are that you will need to configure the .env file with the URL of your server,
+The only differencees are that you will need to configure the ``.env`` file with the URL of your server,
 and enforce the use of SSL.
 
 See the [securesilo user guide](https://securesilo.ai/docs/user-guide) for more information on how to
@@ -311,7 +312,7 @@ SILO_URL=https://mysilo.mydomain.com
 
 If your silo is running behind a reverse proxy that provides SSL termination (like a local nginx server,
 AWS ELB load balancer or remote reverse proxy service such as Cloudflare), you can set SILO_URL to an https
-URL e.g. https://mysilo.mydomain.com along with a SILO_SSL=0 setting. Silo will detect the https://
+URL e.g. `https://mysilo.mydomain.com` along with a `SILO_SSL=0` setting. Silo will detect the `https://`
 protocol of the URL and prompt you to confirm that you want to use https URL's even though it is running
 in http mode.  While this could be considered slighty less secure, as traffic between your host and
 the (possibly distant) reverse proxy will be unencrypted at the network level, the risk is insignificant
@@ -327,32 +328,32 @@ configuration options.
 ## Related Projects
 
 - Langchain - Chaining multiple LLMs to one another
-  https://github.com/langchain-ai/langchain
+  <https://github.com/langchain-ai/langchain>
 
 - Chroma - emebed a corpus of PDF documents for search and retieval
-  https://github.com/chroma-core/gpt4-pdf-chatbot-langchain-chroma
+  <https://github.com/chroma-core/gpt4-pdf-chatbot-langchain-chroma>
 
 - Llama Index - Connect LLMs to external data sources
-  https://github.com/jerryjliu/llama_index
+  <https://github.com/jerryjliu/llama_index>
 
 - ChatGPT Retrieval Plugin
-  https://github.com/chroma-core/chatgpt-retrieval-plugin
+  <https://github.com/chroma-core/chatgpt-retrieval-plugin>
 
 - Copilot for lawyers
-  https://www.harvey.ai/
+  <https://www.harvey.ai/>
 
 - GPT4All - federated inference using consumer grade CPUs
-  https://github.com/nomic-ai/gpt4all
+  <https://github.com/nomic-ai/gpt4all>
 
 - Falcon MPT - Powerful Open-Source Language Model
-  https://www.mosaicml.com/blog/mpt-30b
+  <https://www.mosaicml.com/blog/mpt-30b>
 
 - Vicuna - Open Source Chat Bot tuned for conversation
-  https://github.com/eddieali/Vicuna-AI-LLM
+  <https://github.com/eddieali/Vicuna-AI-LLM>
 
 - Stable Diffusion Image models
-  https://github.com/Stability-AI/stablediffusion
+  <https://github.com/Stability-AI/stablediffusion>
 
 - Awesome Transformaers - A curated list of awesome transformers and pre-trained models
-  https://github.com/huggingface/transformers/blob/main/awesome-transformers.md
+  <https://github.com/huggingface/transformers/blob/main/awesome-transformers.md>
 
