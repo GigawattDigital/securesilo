@@ -84,6 +84,24 @@ And we hope to add support for _non-text_ LLMs soon such as
 - text-to-image models such as DALL-E, CLIP, VQGAN, and others
 - code generation models such as Codex and Copilot
 
+## How much does it cost?
+
+securesilo is 100% free, open source software.  It is licensed under the MIT license, so you can
+use it for any purpose you like.
+
+The LLama 2 language model can be licensed for commercial use from Meta as long as you agree to their
+License Argeement https://ai.meta.com/resources/models-and-libraries/llama-downloads/ and
+Acceptable Use Policy https://ai.meta.com/llama/use-policy/
+
+## Can I use it for commercial purposes?
+
+securesilo can be used for any purpose you like, including commercial use.  Distribution of the
+securesilo software is subject to the open source terms of the MIT license.
+
+The LLaMa language model can be licensed for commercial use from Meta, at no cost _as long as you have
+fewer than 700 million active users per month_.  For research use, there is no limit on the number of
+users.
+
 ## How do I get started?
 
 There are two ways to get a securesilo server instance up and running:
