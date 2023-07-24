@@ -44,6 +44,12 @@ _If you lose your private key and do not have backup private keys, your data wil
 Due to the nature of public key encryption, there is no way to recover your data without the one of
 the private keys that were used to encrypt it._
 
+**It is strongly recommended that you create at least three backup private keys and store them in
+different secure offsite locations (such as a on a thumb drive in a safety deposit box at a bank)
+and/or with trusted third parties such as your attorney, accountant, audit firm, professional key
+escrow service, security firm or other trusted individuals.  Private keys can also be printed out
+on paper or stored securely on a hardware security device such as a Yubikey or Trezor.**
+
 Each user that you create on your server instance is assigned a unique device-based passkey that is
 used to encrypt their data in transit.  User passkeys are generated on the user's device and are
 never sent to the server.  The server only stores the public key portion of the user's passkey.
