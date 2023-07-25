@@ -266,15 +266,15 @@ compromised, your data will be safe.
 
 #### the web-based bot
 
-securesilo includes a web-based interactive prompt interface gigabot that you can use to generate
+securesilo includes a web-based interactive prompt app called gigabot that you can use to generate
 content.
 
-gigabot is a clone of the popular OpenAPI bot, but runs locally in your browser and connects to your
-securesilo server instance instead of OpenAI's servers.
+gigabot is a clone of the popular OpenAPI bot, but runs locally in your browser and connects only to
+your securesilo server instance instead of third party services such as OpenAI, Google and Microsoft.
 
 All communication between your browser and your securesilo server instance is encrypted,
 your prompts are encrypted before they are sent to the server, stored encrypted on the server,
-and all ai-generated responses are encrypted before beng sent back to your browser.
+and all ai-generated responses are encrypted on the server before beng sent back to your browser.
 
 #### the command line client
 
