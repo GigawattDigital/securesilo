@@ -247,7 +247,12 @@ Create your admin account and setup its userid and password.
 
 ## Generate the public and private keys that will be used to encrypt your data at rest on the server
 
-Be sure to save the private key file in a safe place.  You will need it to decrypt your data.
+To complete the admin account setup, will be prompted to generate a public/private key pair, and then
+to download the private key file.
+
+Be sure to save the private key file in a safe place.  You will need it to create backup private keys,
+administer the server, invite users and decrypt your backups.
+
 Only the public key will be stored on the server.
 
 ## Start generating secure content
