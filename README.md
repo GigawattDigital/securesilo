@@ -365,3 +365,8 @@ Other Awesome, similar and related open source projects:
 
 - localGPT - Vicuna-7B with InstructorEmbeddings that can train on Apple Silicon
   <https://github.com/PromtEngineer/localGPT>
+
+## MIT License
+
+securesilo is licensed under the [MIT License]. You can use it for any purpose; you can
+modify it freely, and you can distribute your modifications without restrictions or cost.
