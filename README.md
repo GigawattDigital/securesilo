@@ -34,7 +34,7 @@ secure offsite locations or with trusted third parties.  You can create as many 
 as you like to ensure that you can always recover your data.  Any backup private key can be revoked
 at any time.
 
-You control who can access all chat logs and ai-generated content stored on the server, and you can
+You control who can access all prompts and ai-generated content stored on the server, and you can
 revoke user access at any time.  Since all data is encrypted both in transit and at rest, even if
 your server is compromised, all stored data remains encrypted and can only be recovered only by
 using the administrator's private key or a backup private key.
