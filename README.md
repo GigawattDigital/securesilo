@@ -42,7 +42,7 @@ private key or a backup private key.
 ## What if I lose my private key?
 
 _If you lose your private key and do not have backup private keys, your data will be lost forever!
-Due to the nature of public key encryption, there is no way to recover your data without the one of
+Due to the nature of public key encryption, there is no way to recover your data without one of
 the private keys that were used to encrypt it._
 
 **Therefore, if your data has significant financial value or business operational risk, it is
