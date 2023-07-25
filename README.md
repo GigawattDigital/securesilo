@@ -360,3 +360,8 @@ Other Awesome, similar and related open source projects:
 - Awesome Transformers - A curated list of awesome transformers and pre-trained models
   <https://github.com/huggingface/transformers/blob/main/awesome-transformers.md>
 
+- privateGPT - Train a local LLM based on GPT4All-J or LlamaCpp with your documents
+  <https://github.com/imartinez/privateGPT>
+
+- localGPT - Vicuna-7B with InstructorEmbeddings that can train on Apple Silicon
+  <https://github.com/PromtEngineer/localGPT>
