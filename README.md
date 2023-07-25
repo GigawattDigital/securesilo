@@ -266,11 +266,11 @@ compromised, your data will be safe.
 
 #### the web-based bot
 
-securesilo includes a web-based interactive prompt app called gigabot that you can use to generate
-content.
+securesilo includes a web app named `gigabot` that you can use to produce ai-generated content
+that only you have access to.
 
-gigabot is a clone of the popular OpenAPI bot, but runs locally in your browser and connects only to
-your securesilo server instance instead of third party services such as OpenAI, Google and Microsoft.
+gigabot is a clone of the popular OpenAPI bot, but connects only to your securesilo server
+instance, instead of relying on third-party services such as OpenAI, Google and Microsoft.
 
 All communication between your browser and your securesilo server instance is encrypted,
 your prompts are encrypted before they are sent to the server, stored encrypted on the server,
@@ -278,13 +278,14 @@ and all ai-generated responses are encrypted on the server before beng sent back
 
 #### the command line client
 
-securesilo also includes a command line client that you can use to create and manage ai-generated files.
+securesilo also includes a command line client named `silo` that you can use to create and manage
+ai-generated files.
 
 #### API access
 
-You can also access your securesilo server instance via the securesilo API.  The securesilo api is
-compatible with the OpenAI API, so you can use the same tools you use with OpenAI to access your
-securesilo server instance.
+You can also access your securesilo server instance via your securesilo's API endpoint.  The
+securesilo api is compatible with the OpenAI API, so you can use the same tools you use with OpenAI
+to access your securesilo server instance.
 
 ## Production deployment
 
@@ -292,12 +293,12 @@ Since securesilo is designed to use end-to-end encryption, deploying to a public
 nearly identical to setting up development instance.
 
 The only differences are that you will need to configure the `.env` file with the URL of your server,
-and enforce the use of SSL.
+and will probably want to enforce the use of SSL.
 
 See the [securesilo user guide](https://securesilo.ai/docs/user-guide) for more information on how to
 require users to use two-factor authentication, device-based passkeys, and control other user-related
-security settings.  New users can also be required to register using an email with a specified domain
-and/or only allow users to be created via an invitation link.
+security settings.  New users can also be required to register using an email address with a specified
+domain name and/or only allow users to be created via an invitation link.
 
 ```bash
 
@@ -310,21 +311,24 @@ SILO_URL=https://mysilo.mydomain.com
 ```
 
 If your silo is running behind a reverse proxy that provides SSL termination (like a local nginx server,
-AWS ELB load balancer or remote reverse proxy service such as Cloudflare), you can set SILO_URL to an https
-URL e.g. `https://mysilo.mydomain.com` along with a `SILO_SSL=0` setting. Silo will detect the `https://`
-protocol of the URL and prompt you to confirm that you want to use https URL's even though it is running
-in http mode.  While this could be considered slightly less secure, as traffic between your host and
-the (possibly distant) reverse proxy will be unencrypted at the network level, the risk is insignificant
-because all traffic between your users' devices and the securesilo instance is still end-to-end encrypted
-at the application level, in transit, and at rest on the server.  So the risk of a person-in-the-middle
-attack is limited to that person (such as staff at your hosting provider, at your users' internet providers,
-Cloudflare, or any of the untrusted networks in-between) being able to see _that communication is occurring_
-between your web server and the reverse proxy.  The content of that communication will still be encrypted.
+AWS ELB load balancer or remote reverse proxy service such as Cloudflare), you can set `SILO_URL` to an
+https URL e.g. `https://mysilo.mydomain.com` along with a `SILO_SSL=0` setting. Silo will detect the 
+`https://` protocol of the URL and ask you to confirm that you want to use https URL's even though it is
+running in http mode.  While this could be considered slightly less secure, as traffic between your silo
+host and the (possibly distant) reverse proxy will be unencrypted at the network level, the risk is
+not significant because all traffic between your users' devices and the securesilo instance is still
+end-to-end encrypted at the application level, in transit, and at rest on the server.  So the risk of a
+person-in-the-middle attack is limited to that person (e.g. staff at your hosting provider, your users'
+internet providers, Cloudflare, or any of the untrusted networks in-between) only being able to see _that
+communication is occurring_ between your silo host server and the reverse proxy.  The content of that
+communication will still be encrypted.
 
-See the [securesilo deployment guide](https://securesilo.ai/docs/deployment) for more advanced deployment
+See the [securesilo deployment guide](https://securesilo.ai/docs/deployment) for other advanced deployment
 configuration options.
 
 ## Related Projects
+
+Other Awesome, similar and related open source projects:
 
 - Langchain - Chaining multiple LLMs to one another
   <https://github.com/langchain-ai/langchain>
