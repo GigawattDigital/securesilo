@@ -127,7 +127,11 @@ There are two ways to get a securesilo server instance up and running:
 ### DFY (Done For You)
 
 For a turn-key solution, you can use [securesilo's Done For You service](https://securesilo.ai/plans)
-to have a securesilo server instance created and professionally hosted for you on our infrastructure.
+to have a securesilo server instance created and professionally hosted for you on a secure cloud
+server.  You can be up and running in minutes.
+
+Enterprises can also use the DFY service to have a securesilo server instance created, professionally
+managed, and maintained on their own private cloud or on-premises infrastructure.
 
 ### DIY (Do It Yourself)
 
@@ -137,6 +141,7 @@ If you want to run your own server, you can use the instructions below to get st
 
 - server with at least 16GB of RAM
 - an NVIDIA GPU with at least 8GB of RAM
+- 300GB of free disk space, preferably fast SSD storage
 
 Examples of minimum cloud instances types/sizes that meet these requirements are:
 
