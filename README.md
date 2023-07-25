@@ -117,8 +117,8 @@ methods locations, encryption methods, and visualization tools that we could nev
 our own.
 
 You can create your own plugins, use plugins contributed by the community or purchase proprietary
-plugins from third parties.  You can also sell your own plugins to other securesilo users on the
-soon-to-be-released securesilo plugin marketplace.
+plugins from third parties.  You can also share your plugins, or sell them to other securesilo users
+on the soon-to-be-released securesilo plugin marketplace.
 
 ## How do I get started?
 
