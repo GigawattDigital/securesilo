@@ -36,8 +36,8 @@ at any time.
 
 You control who can access all prompts and ai-generated content stored on the server, and you can
 revoke user access at any time.  Since all data is encrypted both in transit and at rest, even if
-your server is compromised, all stored data remains encrypted and can only be recovered only by
-using the administrator's private key or a backup private key.
+your server is compromised, all stored data remains encrypted and can only be recovered using the
+private key or a backup private key.
 
 ## What if I lose my private key?
 
