@@ -16,7 +16,7 @@ third party**_.
 
 ## How secure is securesilo?
 
-securesilo uses end-to-end encryption to ensure that your data is secure at all times. All promt data
+securesilo uses end-to-end encryption to ensure that your data is secure at all times. All prompt data
 is encrypted on the client device before it is sent to the server, all responses are encrypted on the
 server before being sent back to the user's device, and all data stored on the server is encrypted at
 rest.
@@ -55,13 +55,13 @@ printed out on paper or stored securely on a hardware security device such as a 
 Each user that you create on your server instance is assigned a unique device-based passkey that is
 used to encrypt their data in transit.  User passkeys are generated on the user's device and are
 never sent to the server.  The server only stores the public key portion of the user's passkey.
-In addiiton, user passkeys are rotated on a regular basis to ensure that even if a user's device is
+In addition, user passkeys are rotated on a regular basis to ensure that even if a user's device is
 compromised, the risk of data loss is limited.  You can also require users to use two-factor
 authentication to further secure their account.
 
 ## Is it as good as OpenAI?
 
-securesilo uses only LLM's (large anguage models) that have been released as open source software,
+securesilo uses only LLM's (large language models) that have been released as open source software,
 or with a license that allows for commercial use, that can be run entirely on your own hardware or
 a cloud server that you completely control, without having to rely on any third party service which
 could use your data for their own purposes.
@@ -91,7 +91,7 @@ securesilo is 100% free, open source software.  It is licensed under the MIT lic
 use it for any purpose you like.
 
 The Llama 2 language model can be licensed for commercial use from Meta as long as you agree to their
-License Argeement <https://ai.meta.com/resources/models-and-libraries/Llama-downloads/> and
+License Agreement <https://ai.meta.com/resources/models-and-libraries/Llama-downloads/> and
 Acceptable Use Policy <https://ai.meta.com/llama/use-policy/>
 
 ## Can I use it for commercial purposes?
@@ -118,7 +118,7 @@ our own.
 
 You can create your own plugins, use plugins contributed by the community or purchase proprietary
 plugins from third parties.  You can also sell your own plugins to other securesilo users on the
-soon-to-be-released securesiloo plugin marketplace.
+soon-to-be-released securesilo plugin marketplace.
 
 ## How do I get started?
 
@@ -126,21 +126,8 @@ There are two ways to get a securesilo server instance up and running:
 
 ### DFY (Done For You)
 
-If you don't want to worry about setting up and maintaining your own server, you can use
-[securesilo's Done For You service](https://securesilo.ai/plans) to have a securesilo server instance
-created and managed for you **on your own Amazon AWS account**.
-
-We can also create and manage your server instance on your hardware or on any cloud provider
-that offers the necessary NVIDEA GPU processing power and RAM needed for AI, such as (currently)
-[Google Cloud GCE](https://cloud.google.com/gpu/),
-[Microsoft Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes-gpu) or
-[Linode GPU](https://www.linode.com/products/gpu/)
-
-Digital Ocean and other cloud providers' GPU compute offerings will be supported as they become available.
-
-Your DYF server instance will be created **on your own account**, so you will have full control over it,
-as well as all of your data.  We do not resell cloud services, so you will be billed directly by your
-cloud provider for the services you use.
+For a turn-key solution, you can use [securesilo's Done For You service](https://securesilo.ai/plans)
+to have a securesilo server instance created and professionally hosted for you on our infrastructure.
 
 ### DIY (Do It Yourself)
 
@@ -149,7 +136,7 @@ If you want to run your own server, you can use the instructions below to get st
 ## Hardware Requirements
 
 - server with at least 16GB of RAM
-- an NVIDEA GPU with at least 8GB of RAM
+- an NVIDIA GPU with at least 8GB of RAM
 
 Examples of minimum cloud instances types/sizes that meet these requirements are:
 
@@ -225,7 +212,7 @@ git clone git@github.com:GigawattDigital/securesilo.git
 Copy the `env.example` file in the project root directory to ``.env`` and edit the values to provide
 your Meta llama-2 license information.
 
-(please use your own values for the licence keys, not the invalid sample values shown below)
+(please use your own values for the license keys, not the invalid sample values shown below)
 
 ```bash
 
@@ -249,7 +236,7 @@ docker-compose up
 ## Login to you personal AI server
 
 Open a browser and navigate to [http://localhost:6006/](http://localhost:6006/) (or whatever
-host/port you configured in your ``.env`` file)
+host/port you configured in your `.env` file)
 
 Create your admin account and setup its userid and password.
 
@@ -269,11 +256,13 @@ compromised, your data will be safe.
 
 #### the web-based bot
 
-securesilo includes a web-based bot that you can use to generate content named gigabot.
+securesilo includes a web-based interactive prompt interface gigabot that you can use to generate
+content.
 
-gigabot is a clone of the popular OpenAPI bot, but it runs locally in your browser.
+gigabot is a clone of the popular OpenAPI bot, but runs locally in your browser and connects to your
+securesilo server instance instead of OpenAI's servers.
 
-All communication between your broeser and your securesilo server instance is encrypted,
+All communication between your browser and your securesilo server instance is encrypted,
 your prompts are encrypted before they are sent to the server, stored encrypted on the server,
 and all ai-generated responses are encrypted before beng sent back to your browser.
 
@@ -292,7 +281,7 @@ securesilo server instance.
 Since securesilo is designed to use end-to-end encryption, deploying to a publicly accessible server is
 nearly identical to setting up development instance.
 
-The only differencees are that you will need to configure the ``.env`` file with the URL of your server,
+The only differences are that you will need to configure the `.env` file with the URL of your server,
 and enforce the use of SSL.
 
 See the [securesilo user guide](https://securesilo.ai/docs/user-guide) for more information on how to
@@ -314,12 +303,12 @@ If your silo is running behind a reverse proxy that provides SSL termination (li
 AWS ELB load balancer or remote reverse proxy service such as Cloudflare), you can set SILO_URL to an https
 URL e.g. `https://mysilo.mydomain.com` along with a `SILO_SSL=0` setting. Silo will detect the `https://`
 protocol of the URL and prompt you to confirm that you want to use https URL's even though it is running
-in http mode.  While this could be considered slighty less secure, as traffic between your host and
+in http mode.  While this could be considered slightly less secure, as traffic between your host and
 the (possibly distant) reverse proxy will be unencrypted at the network level, the risk is insignificant
 because all traffic between your users' devices and the securesilo instance is still end-to-end encrypted
 at the application level, in transit, and at rest on the server.  So the risk of a person-in-the-middle
 attack is limited to that person (such as staff at your hosting provider, at your users' internet providers,
-Cloudflare, or any of the untrusted networks in-between) being able to see _that communication is occuring_
+Cloudflare, or any of the untrusted networks in-between) being able to see _that communication is occurring_
 between your web server and the reverse proxy.  The content of that communication will still be encrypted.
 
 See the [securesilo deployment guide](https://securesilo.ai/docs/deployment) for more advanced deployment
@@ -330,7 +319,7 @@ configuration options.
 - Langchain - Chaining multiple LLMs to one another
   <https://github.com/langchain-ai/langchain>
 
-- Chroma - emebed a corpus of PDF documents for search and retieval
+- Chroma - embed a corpus of PDF documents for search and retrieval
   <https://github.com/chroma-core/gpt4-pdf-chatbot-langchain-chroma>
 
 - Llama Index - Connect LLMs to external data sources
@@ -354,6 +343,6 @@ configuration options.
 - Stable Diffusion Image models
   <https://github.com/Stability-AI/stablediffusion>
 
-- Awesome Transformaers - A curated list of awesome transformers and pre-trained models
+- Awesome Transformers - A curated list of awesome transformers and pre-trained models
   <https://github.com/huggingface/transformers/blob/main/awesome-transformers.md>
 
