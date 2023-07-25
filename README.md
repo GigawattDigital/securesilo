@@ -283,9 +283,9 @@ ai-generated files.
 
 #### API access
 
-You can also access your securesilo server instance via your securesilo's API endpoint.  The
-securesilo api is compatible with the OpenAI API, so you can use the same tools you use with OpenAI
-to access your securesilo server instance.
+You can also access your securesilo server via your instance's API endpoint.  The securesilo api is
+compatible with the OpenAI API, so you can use the same tools you use with OpenAI to access your
+securesilo inference engine and data.
 
 ## Production deployment
 
