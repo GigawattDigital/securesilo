@@ -53,11 +53,11 @@ escrow service, professional security firm or other trusted individuals.  Privat
 printed out on paper or stored securely on a hardware security device such as a Yubikey or Trezor.**
 
 Each user that you create on your server instance is assigned a unique device-based passkey that is
-used to encrypt their data in transit.  User passkeys are generated on the user's device and are
-never sent to the server.  The server only stores the public key portion of the user's passkey.
-In addition, user passkeys are rotated on a regular basis to ensure that even if a user's device is
-compromised, the risk of data loss is limited.  You can also require users to use two-factor
-authentication to further secure their account.
+used to encrypt their data in transit.  User passkeys are generated on the user's device and the
+private key portion is never sent to the server.  The server only stores the public key portion of
+the user's passkey. In addition, user passkeys are rotated on a regular basis to ensure that even
+if a user's device is compromised, the risk of data loss is limited.  You can also require users to
+use two-factor authentication to further secure their account.
 
 ## Is it as good as OpenAI?
 
