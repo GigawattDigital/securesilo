@@ -247,7 +247,7 @@ Create your admin account and setup its userid and password.
 
 ## Generate the public and private keys that will be used to encrypt your data at rest on the server
 
-To complete the admin account setup, will be prompted to generate a public/private key pair, and then
+To complete the admin account setup, you'll be prompted to generate a public/private key pair, and
 to download the private key file.
 
 Be sure to save the private key file in a safe place.  You will need it to create backup private keys,
