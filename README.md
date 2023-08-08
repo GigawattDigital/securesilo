@@ -156,7 +156,6 @@ securesilo has been tested on the following platforms:
 - Rocky Linux 8.4
 - CentOS 8.4
 - Ubuntu 20.04 LTS
-- Ubuntu 21.04
 - MacOS 11.5.2
 
 ## Software requirements
