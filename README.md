@@ -367,5 +367,5 @@ Other Awesome, similar and related open source projects:
 
 ## MIT License
 
-securesilo is licensed under the [MIT License]. You can use it for any purpose; you can
+securesilo is licensed under the [MIT License](LICENSE). You can use it for any purpose; you can
 modify it freely, and you can distribute your modifications without restrictions or cost.
