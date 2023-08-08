@@ -171,47 +171,47 @@ securesilo requires the following software to be installed on your server:
 - cuDNN 8.2 or later
 - NVIDIA GPU driver 470.57.02 or later
 
-## Install Docker
+### Install Docker
 
 See the [Docker installation guide](https://docs.docker.com/engine/install/) for instructions on how to
 install Docker on your server.
 
-## Install Docker Compose
+### Install Docker Compose
 
 See the [Docker Compose installation guide](https://docs.docker.com/compose/install/) for instructions
 on how to install Docker Compose on your server.
 
-## Install Git
+### Install Git
 
 See the [Git installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for
 
-## Install Python 3.8 or later
+### Install Python 3.8 or later
 
 See the [Python installation guide](https://www.python.org/downloads/) for instructions on how to
 
-## Install pyTorch 1.9 or later
+### Install pyTorch 1.9 or later
 
 See the [pyTorch installation guide](https://pytorch.org/get-started/locally/) for instructions on how to
 
-## Install CUDA 11.1 or later
+### Install CUDA 11.1 or later
 
 See the [CUDA installation guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)
 
-## Install cuDNN 8.2 or later
+### Install cuDNN 8.2 or later
 
 See the [cuDNN installation guide](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html)
 
-## Install NVIDIA GPU driver 470.57.02 or later
+### Install NVIDIA GPU driver 470.57.02 or later
 
 See the [NVIDIA GPU driver installation guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)
 
-## Clone the securesilo repository
+### Clone the securesilo repository
 
 ```bash
 git clone git@github.com:GigawattDigital/securesilo.git
 ```
 
-## Configure your Meta commercial license
+### Configure your Meta commercial license
 
 Copy the `env.example` file in the project root directory to ``.env`` and edit the values to provide
 your Meta llama-2 license information.
@@ -231,20 +231,20 @@ SILO_PORT=6006
 
 ```
 
-## Run the docker container
+### Run the docker container
 
 ```bash
 docker-compose up
 ```
 
-## Login to you personal AI server
+### Login to you personal AI server
 
 Open a browser and navigate to [http://localhost:6006/](http://localhost:6006/) (or whatever
 host/port you configured in your `.env` file)
 
 Create your admin account and setup its userid and password.
 
-## Generate the public and private keys that will be used to encrypt your data at rest on the server
+### Generate the public and private keys that will be used to encrypt your data at rest on the server
 
 To complete the admin account setup, you'll be prompted to generate a public/private key pair, and
 to download the private key file.
@@ -254,7 +254,7 @@ administer the server, invite users and decrypt your backups.
 
 Only the public key will be stored on the server.
 
-## Start generating secure content
+### Start generating secure content
 
 That's it!  You're ready to start creating AI-generated content.
 
