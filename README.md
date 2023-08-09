@@ -78,6 +78,7 @@ documents such as technical reports, articles, scientific research, contracts an
 
 Additional language models are the roadmap such as
 
+- Stable Diffusion, StableLM (and StabilityCode!) <https://github.com/stability-AI/stableLM/>
 - other Open LLMs <https://github.com/eugeneyan/open-llms>
 
 And we plan to add support for _non-text_ LLMs soon such as
