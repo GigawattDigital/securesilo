@@ -152,8 +152,9 @@ Examples of bare minimum cloud instances types/sizes that meet these requirement
 - Google Cloud GCE n1-standard-8 instance (8 vCPU, 30GB RAM, 1x 100GB SSD, 1x NVIDIA T4 GPU)
 - Microsoft Azure NCasT4_v3 instance (8 vCPU, 32GB RAM, 1x 100GB SSD, 1x NVIDIA T4 GPU)
 
-For production deployments capable of real-time inference using the most capable llama2 70b models 
-at maximum accuracy for multiple users, over 256GB of GPU RAM is required (so 8 x A100's @ 80GB):
+For production deployments capable of real-time inference using the most capable llama2 70b models currently
+at maximum accuracy for multiple users, over 280GB of GPU RAM is required (so 8 x A100's @ 40GB) or more to
+support multiple concurrent users:
 
 - AWS EC2 p4d.24xlarge instance (96 vCPU, 1,024GB RAM, 8x 1.9TB NVMe SSD, 8x NVIDIA A100 GPU) for 320GB HBM2 RAM)
 - AWS EC2 p4de.24xlarge instance (96 vCPU, 1,024GB RAM, 8x 1.9TB NVMe SSD, 8x NVIDIA A100 GPU) for 640GB HBM2e RAM
