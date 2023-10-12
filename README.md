@@ -339,11 +339,15 @@ configuration options.
 
 Other Awesome, similar and related open source projects:
 
-- Langchain - Chaining multiple LLMs to one another
+- Langchain - Pipeline tooling
   <https://github.com/langchain-ai/langchain>
 
 - Chroma - embed a corpus of PDF documents for search and retrieval
   <https://github.com/chroma-core/gpt4-pdf-chatbot-langchain-chroma>
+
+- Llama 2 Local Vector Embeddings and Conversational Agents
+  https://www.youtube.com/watch?v=6iHVJyX2e50
+  https://www.youtube.com/watch?v=yfHHvmaMkcA
 
 - Llama Index - Connect LLMs to external data sources
   <https://github.com/jerryjliu/llama_index>
