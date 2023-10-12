@@ -339,44 +339,44 @@ configuration options.
 
 Other Awesome, similar and related open source projects:
 
-- Langchain - Pipeline tooling
+- Langchain - Pipeline tooling  
   <https://github.com/langchain-ai/langchain>
 
-- Chroma - embed a corpus of PDF documents for search and retrieval
+- Chroma - embed a corpus of PDF documents for search and retrieval  
   <https://github.com/chroma-core/gpt4-pdf-chatbot-langchain-chroma>
 
-- Llama 2 Local Vector Embeddings and Conversational Agents
-  https://www.youtube.com/watch?v=6iHVJyX2e50
+- Llama 2 Local Vector Embeddings and Conversational Agents  
+  https://www.youtube.com/watch?v=6iHVJyX2e50  
   https://www.youtube.com/watch?v=yfHHvmaMkcA
 
-- Llama Index - Connect LLMs to external data sources
+- Llama Index - Connect LLMs to external data sources  
   <https://github.com/jerryjliu/llama_index>
 
-- ChatGPT Retrieval Plugin
+- ChatGPT Retrieval Plugin  
   <https://github.com/chroma-core/chatgpt-retrieval-plugin>
 
-- Copilot for lawyers
+- Copilot for lawyers  
   <https://www.harvey.ai/>
 
-- GPT4All - federated inference using consumer grade CPUs
+- GPT4All - federated inference using consumer grade CPUs  
   <https://github.com/nomic-ai/gpt4all>
 
-- Falcon MPT - Powerful Open-Source Language Model
+- Falcon MPT - Powerful Open-Source Language Model  
   <https://www.mosaicml.com/blog/mpt-30b>
 
-- Vicuna - Open Source Chat Bot tuned for conversation
+- Vicuna - Open Source Chat Bot tuned for conversation  
   <https://github.com/eddieali/Vicuna-AI-LLM>
 
-- Stable Diffusion Image models
+- Stable Diffusion Image models  
   <https://github.com/Stability-AI/stablediffusion>
 
-- Awesome Transformers - A curated list of awesome transformers and pre-trained models
+- Awesome Transformers - A curated list of awesome transformers and pre-trained models  
   <https://github.com/huggingface/transformers/blob/main/awesome-transformers.md>
 
-- privateGPT - Train a local LLM based on GPT4All-J or LlamaCpp with your documents
+- privateGPT - Train a local LLM based on GPT4All-J or LlamaCpp with your documents  
   <https://github.com/imartinez/privateGPT>
 
-- localGPT - Vicuna-7B with InstructorEmbeddings that can train on Apple Silicon
+- localGPT - Vicuna-7B with InstructorEmbeddings that can train on Apple Silicon  
   <https://github.com/PromtEngineer/localGPT>
 
 ## MIT License
