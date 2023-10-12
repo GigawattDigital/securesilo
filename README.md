@@ -140,15 +140,22 @@ If you want to run your own server, you can use the instructions below to get st
 
 ## Hardware Requirements
 
-- server with at least 16GB of RAM
-- an NVIDIA GPU with at least 8GB of RAM
-- 300GB of free disk space, preferably fast SSD storage
+For dev servers:
 
-Examples of minimum cloud instances types/sizes that meet these requirements are:
+- server with at least 32GB of RAM
+- NVIDIA T4 GPU (16GB RAM) or preferably a 40GB A100 (or 2)
+- 1TB of free disk space, preferably on a fast NVMe device
+
+Examples of bare minimum cloud instances types/sizes that meet these requirements are:
 
 - Amazon AWS EC2 g4dn.2xlarge instance (8 vCPU, 32GB RAM, 1x 125GB NVMe SSD, 1x NVIDIA T4 GPU)
 - Google Cloud GCE n1-standard-8 instance (8 vCPU, 30GB RAM, 1x 100GB SSD, 1x NVIDIA T4 GPU)
 - Microsoft Azure NCasT4_v3 instance (8 vCPU, 32GB RAM, 1x 100GB SSD, 1x NVIDIA T4 GPU)
+
+For production deployments capable of real-time inference using the most capable llama2 70b models 
+at maximum accuracy for multiple users, over 256GB of GPU RAM is required (so 8 x A100's @ 80GB):
+
+- AWS EC2 p4d.24xlarge instance (96 vCPU, 1,024GB RAM, 8x 1.9TB NVMe SSD, 8x NVIDIA A100 GPU)
 
 ## OS Platform
 
